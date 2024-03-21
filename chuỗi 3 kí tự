@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{ 
+    int count = 0;
+    vector<char> vt = {'a','b','c','d'};
+    for(int i = 0;i < 4;i++)
+    {
+        for(int j = 0;j < 4;j++)
+        {   
+            cout << "Ky tu " << vt[i] << " dau la :" << endl;
+            cout << vt[i] << vt[j] << vt[0] << endl;
+            cout << vt[i] << vt[j] << vt[1] << endl;
+            cout << vt[i] << vt[j] << vt[2] << endl;
+            cout << vt[i] << vt[j] << vt[3] << endl;
+            count += 4;
+        }
+    }
+    cout << "so tong ky tu la : " << count;
+}
